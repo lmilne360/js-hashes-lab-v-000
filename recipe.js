@@ -1,24 +1,22 @@
 'use strict';
 
-function addIngredient(recipe, ingredient, amount) {
+function addIngredient(recipe, ingredient, amount){
   recipe[ingredient] = amount;
   return recipe;
 }
 
-function removeIngredient(recipe, ingredient) {
+function removeIngredient(recipe, ingredient){
   delete recipe[ingredient];
   return recipe;
 }
 
-function updateIngredient(recipe, ingredient, amount) {
+function updateIngredient(recipe, ingredient, amount){
   recipe[ingredient] = amount;
   return recipe;
 }
 
-function readRecipe(recipe) {
+function readRecipe(recipe){
   for (var key in recipe) {
-    if (object.hasOwnProperty(key)) {
-      console.log(`this recipe calls for ${recipe[key]} of ${key}`);
-    }
+    console.log(`this recipe calls for ${recipe[key]} of ${key}`);
   }
 }
